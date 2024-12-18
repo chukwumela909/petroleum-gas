@@ -14,18 +14,7 @@
 	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
 	<link rel="alternate" type="application/rss+xml" title="Petroleum and Gas &raquo; Feed"
 		href="https://themes.webdevia.com/petroleum-gas/?feed=rss2" />
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script>
-		  tailwind.config = {
-			theme: {
-			  extend: {
-				colors: {
-				  clifford: '#da373d',
-				}
-			  }
-			}
-		  }
-		</script>
+
 	<link rel="alternate" type="application/rss+xml" title="Petroleum and Gas &raquo; Comments Feed"
 		href="https://themes.webdevia.com/petroleum-gas/?feed=comments-rss2" />
 
@@ -968,89 +957,79 @@
 			}
 		</style>
 	</noscript>
+	<link href="./src/output.css" rel="stylesheet">
 </head>
 
 <body
 	class="home page-template-default page page-id-883 theme-petroleum woocommerce-no-js wpb-js-composer js-comp-ver-6.10.0 vc_responsive">
 	<!--.l-header region -->
-	<header class='l-header creative-layout'>
-		<div class="top-bar-container contain-to-grid sticky ">
-			<nav class="top-bar bg-red" data-topbar="">
-				<ul class="title-area">
-					<li class="name">
-						<h1>
-							<a title="Petroleum and Gas" rel="home" href="https://themes.webdevia.com/petroleum-gas/">
-								<img class="logo" alt="Petroleum and Gas" src="./images/gas_logo.png" height="50px"
-									width="50px">
-								<img class="logo-sticky" alt="Petroleum and Gas" src="./images/gas_logo.png"
-									height="50px" width="50px">
-							</a>
-						</h1>
-					</li>
-					<li class="toggle-topbar menu-icon">
-						<a href="#"><span>Menu</span></a>
-					</li>
+	<style>
+		/* Transition effect for header background */
+		.v_nav {
+			transition: background-color 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		/* Scrolled header styles */
+		.v_nav.scrolled {
+			background-color: rgba(241, 241, 241, 0.8);
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+
+		.scroll_link_color {
+			color: #710298;
+		}
+	</style>
+	<header class='l-header creative-layout  fixed '>
+		<div class="top-bar-container contain-to-grid  ">
+
+			<nav class="v_nav flex justify-around items-center  py-5  w-screen">
+				<img class="h-14 w-14" src="./images/gas_logo.png" alt="">
+				<div class=""></div>
+				<div class=""></div>
+				<ul class="md:flex hidden">
+					<li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
+							href="./index.html">Home</a></li>
+					<li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
+							href="./index.html">About</a></li>
+					<li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
+							href="./index.html">Services</a></li>
+					<li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
+							href="./index.html">Contact</a></li>
 				</ul>
-				<section class="creative top-bar-section right">
-					<div class="menu-home-menu-container">
-						<ul id="menu-home-menu" class="menu">
-
-							<li id="menu-item-1521" class=" not-click  active_menu color-2">
-
-								<a href="#" class="has-icon">Home</a>
-
-
-							</li>
-
-
-							<li id="menu-item-656" class=" not-click  color-3">
-
-								<a href="#" class="has-icon">About</a>
-
-
-
-
-							</li>
-
-
-							<li id="menu-item-721" class=" not-click wd_mega-menu color-4">
-
-								<a href="#" class="has-icon">Services</a>
-
-
-							</li>
-
-
-
-
-
-							<li id="menu-item-13" class=" color-7">
-
-								<a href="https://themes.webdevia.com/petroleum-gas/?page_id=8"
-									class="has-icon">Contact</a>
-
-							</li>
-
-
-							<!-- <li id="menu-item-856" class=" color-8">
-
-								<a href="https://themes.webdevia.com/petroleum-gas/?page_id=836"
-									class="has-icon">Shop</a>
-
-							</li> -->
-						</ul>
-					</div>
-				</section>
-				<!-- <div class="show-for-large-up creative-social">
-
-				</div> -->
+				<div class="md:hidden">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"
+						stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
+						<line x1="3" y1="12" x2="21" y2="12"></line>
+						<line x1="3" y1="6" x2="21" y2="6"></line>
+						<line x1="3" y1="18" x2="21" y2="18"></line>
+					</svg>
+				
+				</div>
 
 			</nav>
-
 		</div>
 
 	</header> <!-- content  -->
+	<script>
+		// Add background to header on scroll
+		window.addEventListener('scroll', () => {
+			const nav = document.querySelector('.v_nav');
+			const navlink = document.querySelectorAll('.v_navlink');
+			const menu_icon = document.querySelector('.menu-icon');
+			if (window.scrollY > 20) {
+				nav.classList.add('scrolled');
+				navlink.forEach(link => link.classList.add('scroll_link_color'));
+				menu_icon.setAttribute('stroke', '#710298');
+			} else {
+				nav.classList.remove('scrolled');
+				navlink.forEach(link => link.classList.remove('scroll_link_color'));
+				menu_icon.setAttribute('stroke', 'white');
+
+			}
+		});
+	</script>
 	<main class="l-main">
+
 		<div class="main row">
 			<article class="large-12 columns">
 				<div class="body field clearfix">
@@ -1109,7 +1088,7 @@
 															data-frame_1_mask="u:t;"
 															data-frame_999="st:9000;sp:1000;auto:true;"
 															data-frame_999_mask="u:t;"
-															style="z-index:7;font-family:Montserrat;text-align:left;">Real
+															style="z-index:7;font-family:Montserrat;text-align:left;color: ;">Real
 															Deal
 														</rs-layer><!--
 
@@ -1219,7 +1198,7 @@
 																		swipe_min_touches: 50
 																	},
 																	arrows: {
-																		enable: true,
+																		enable: false,
 																		tmp: "<div class=\"tp-title-wrap\">  	<div class=\"tp-arr-imgholder\"></div> </div>",
 																		style: "zeus",
 																		left: {
@@ -1252,7 +1231,7 @@
 												var once_revslider31 = false;
 												if (document.readyState === "loading") { document.addEventListener('readystatechange', function () { if ((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider31) { once_revslider31 = true; revinit_revslider31(); } }); } else { once_revslider31 = true; revinit_revslider31(); }
 											</script>
-											<script>
+											<!-- <script>
 												var htmlDivCss = unescape("%23rev_slider_3_1_wrapper%20.zeus.tparrows%20%7B%0A%20%20cursor%3Apointer%3B%0A%20%20min-width%3A70px%3B%0A%20%20min-height%3A70px%3B%0A%20%20position%3Aabsolute%3B%0A%20%20display%3Ablock%3B%0A%20%20z-index%3A1000%3B%0A%20%20border-radius%3A50%25%3B%20%20%20%0A%20%20overflow%3Ahidden%3B%0A%20%20background%3Argba%280%2C0%2C0%2C0.1%29%3B%0A%7D%0A%0A%23rev_slider_3_1_wrapper%20.zeus.tparrows%3Abefore%20%7B%0A%20%20font-family%3A%20%27revicons%27%3B%0A%20%20font-size%3A20px%3B%0A%20%20color%3A%23ffffff%3B%0A%20%20display%3Ablock%3B%0A%20%20line-height%3A%2070px%3B%0A%20%20text-align%3A%20center%3B%20%20%20%20%0A%20%20z-index%3A2%3B%0A%20%20position%3Arelative%3B%0A%7D%0A%23rev_slider_3_1_wrapper%20.zeus.tparrows.tp-leftarrow%3Abefore%20%7B%0A%20%20content%3A%20%27%5Ce824%27%3B%0A%7D%0A%23rev_slider_3_1_wrapper%20.zeus.tparrows.tp-rightarrow%3Abefore%20%7B%0A%20%20content%3A%20%27%5Ce825%27%3B%0A%7D%0A%0A%23rev_slider_3_1_wrapper%20.zeus%20.tp-title-wrap%20%7B%0A%20%20background%3Argba%280%2C0%2C0%2C0.5%29%3B%0A%20%20width%3A100%25%3B%0A%20%20height%3A100%25%3B%0A%20%20top%3A0px%3B%0A%20%20left%3A0px%3B%0A%20%20position%3Aabsolute%3B%0A%20%20opacity%3A0%3B%0A%20%20transform%3Ascale%280%29%3B%0A%20%20-webkit-transform%3Ascale%280%29%3B%0A%20%20%20transition%3A%20all%200.3s%3B%0A%20%20-webkit-transition%3Aall%200.3s%3B%0A%20%20-moz-transition%3Aall%200.3s%3B%0A%20%20%20border-radius%3A50%25%3B%0A%20%7D%0A%23rev_slider_3_1_wrapper%20.zeus%20.tp-arr-imgholder%20%7B%0A%20%20width%3A100%25%3B%0A%20%20height%3A100%25%3B%0A%20%20position%3Aabsolute%3B%0A%20%20top%3A0px%3B%0A%20%20left%3A0px%3B%0A%20%20background-position%3Acenter%20center%3B%0A%20%20background-size%3Acover%3B%0A%20%20border-radius%3A50%25%3B%0A%20%20transform%3Atranslatex%28-100%25%29%3B%0A%20%20-webkit-transform%3Atranslatex%28-100%25%29%3B%0A%20%20%20transition%3A%20all%200.3s%3B%0A%20%20-webkit-transition%3Aall%200.3s%3B%0A%20%20-moz-transition%3Aall%200.3s%3B%0A%0A%20%7D%0A%23rev_slider_3_1_wrapper%20.zeus.tp-rightarrow%20.tp-arr-imgholder%20%7B%0A%20%20%20%20transform%3Atranslatex%28100%25%29%3B%0A%20%20-webkit-transform%3Atranslatex%28100%25%29%3B%0A%20%20%20%20%20%20%7D%0A%23rev_slider_3_1_wrapper%20.zeus.tparrows%3Ahover%20.tp-arr-imgholder%20%7B%0A%20%20transform%3Atranslatex%280%29%3B%0A%20%20-webkit-transform%3Atranslatex%280%29%3B%0A%20%20opacity%3A1%3B%0A%7D%0A%20%20%20%20%20%20%0A%23rev_slider_3_1_wrapper%20.zeus.tparrows%3Ahover%20.tp-title-wrap%20%7B%0A%20%20transform%3Ascale%281%29%3B%0A%20%20-webkit-transform%3Ascale%281%29%3B%0A%20%20opacity%3A1%3B%0A%7D%0A%20%0A");
 												var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
 												if (htmlDiv) {
@@ -1262,8 +1241,8 @@
 													htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
 													document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 												}
-											</script>
-											<script>
+											</script> -->
+											<!-- <script>
 												var htmlDivCss = unescape("%0A%0A%0A%0A");
 												var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
 												if (htmlDiv) {
@@ -1273,7 +1252,7 @@
 													htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
 													document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 												}
-											</script>
+											</script> -->
 										</rs-module-wrap>
 										<!-- END REVOLUTION SLIDER -->
 									</div>
@@ -1416,7 +1395,9 @@
 														</div>
 														<div class="box-description">
 															LPG Product Retail <p>
-																Quality LPG products available for households and businesses, ensuring reliability every step of the way. </p></a>
+																Quality LPG products available for households and
+																businesses, ensuring reliability every step of the way.
+															</p></a>
 														</div>
 
 
@@ -1438,7 +1419,8 @@
 														</div>
 														<div class="box-description">
 															LPG Tank Installation <p>
-																Expert installation services for safe and secure LPG tank setup for homes and businesses.</p></a>
+																Expert installation services for safe and secure LPG
+																tank setup for homes and businesses.</p></a>
 														</div>
 
 
@@ -1460,7 +1442,8 @@
 														</div>
 														<div class="box-description">
 															Large & Small Scale Delivery <p>
-																Timely delivery of LPG for industrial, commercial, and residential needs, big or small.</p></a>
+																Timely delivery of LPG for industrial, commercial, and
+																residential needs, big or small.</p></a>
 														</div>
 
 
@@ -1482,7 +1465,8 @@
 														</div>
 														<div class="box-description">
 															Gas Cylinders & Accessories <p>
-																Wide range of durable gas cylinders and high-quality LPG accessories for all your needs. </p></a>
+																Wide range of durable gas cylinders and high-quality LPG
+																accessories for all your needs. </p></a>
 														</div>
 
 
@@ -1506,7 +1490,8 @@
 														</div>
 														<div class="box-description">
 															Efficiency & Safety <p>
-																Designed with efficiency and safety in mind, ensuring peace of mind for our customers.</p></a>
+																Designed with efficiency and safety in mind, ensuring
+																peace of mind for our customers.</p></a>
 														</div>
 
 
@@ -1528,7 +1513,8 @@
 														</div>
 														<div class="box-description">
 															Eco-Friendly Practices <p>
-																Committed to reducing environmental impact through sustainable energy solutions. </p></a>
+																Committed to reducing environmental impact through
+																sustainable energy solutions. </p></a>
 														</div>
 
 
@@ -1550,7 +1536,8 @@
 														</div>
 														<div class="box-description">
 															Customer Satisfaction <p>
-																Dedicated to providing exceptional service and building trust with every delivery. </p></a>
+																Dedicated to providing exceptional service and building
+																trust with every delivery. </p></a>
 														</div>
 
 
@@ -1572,7 +1559,8 @@
 														</div>
 														<div class="box-description">
 															Innovation & Growth <p>
-																Continuously improving our services and exploring new ways to serve our customers better. </p></a>
+																Continuously improving our services and exploring new
+																ways to serve our customers better. </p></a>
 														</div>
 
 
@@ -1599,7 +1587,8 @@
 												<div class="">
 													<div class="large-12 columns  wd-title-section_c">
 														<h2>Our Latest LPG Projects</h2>
-														<h5>Explore our recent initiatives focused on clean and efficient energy solutions for homes and industries.</h5>
+														<h5>Explore our recent initiatives focused on clean and
+															efficient energy solutions for homes and industries.</h5>
 
 													</div>
 												</div>
@@ -1623,7 +1612,8 @@
 																	<h4>LPG Plant Installation</h4>
 																</a>
 
-																<p>Industrial<span> - </span>Energy - <span> - </span> Solutions</p>
+																<p>Industrial<span> - </span>Energy - <span> - </span>
+																	Solutions</p>
 															</div>
 
 														</li>
@@ -1637,7 +1627,8 @@
 																	<h4>LPG Supply Chain Optimization</h4>
 																</a>
 
-																<p>Logistics<span> - </span>Efficiency - <span> - </span> Sustainability</p>
+																<p>Logistics<span> - </span>Efficiency - <span> -
+																	</span> Sustainability</p>
 															</div>
 
 														</li>
@@ -1654,7 +1645,8 @@
 																	<h4>Domestic LPG Distribution</h4>
 																</a>
 
-																<p>Residential<span> - </span> Energy -<span> - </span> Accessibility</p>
+																<p>Residential<span> - </span> Energy -<span> - </span>
+																	Accessibility</p>
 															</div>
 
 														</li>

@@ -1,0 +1,21 @@
+# Node.js
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Testing
+/coverage/
+/tests/
+
+# Build
+/dist/
+/build/
+
+# Environment variables
+.env
+.env.*
