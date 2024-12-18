@@ -986,6 +986,28 @@
 		.scroll_link_color {
 			color: #710298;
 		}
+
+		/* Mobile menu styles */
+		.mobile-menu {
+			display: none;
+			background-color: rgba(241, 241, 241, 0.9);
+			position: absolute;
+			top: 70px;
+			/* Adjust this based on your header height */
+			left: 0;
+			right: 0;
+			z-index: 50;
+			text-align: center;
+		}
+
+		.mobile-menu.active {
+			display: block;
+		}
+
+		.mobile-menu li {
+			padding: 10px 0;
+			border-bottom: 1px solid #ccc;
+		}
 	</style>
 	<header class='l-header creative-layout  fixed '>
 		<div class="top-bar-container contain-to-grid  ">
@@ -998,11 +1020,11 @@
 					<li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
 							href="./index.html">Home</a></li>
 					<li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
-							href="./index.html">About</a></li>
+							href="./aboutus.html">About</a></li>
 					<li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
-							href="./index.html">Services</a></li>
+							href="./services.html">Services</a></li>
 					<li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
-							href="./index.html">Contact</a></li>
+							href="./contact.html">Contact</a></li>
 				</ul>
 				<div class="md:hidden">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"
@@ -1013,7 +1035,13 @@
 					</svg>
 
 				</div>
-
+				<!-- Mobile Nav Links -->
+				<ul class="mobile-menu">
+					<li><a class="v_navlink text-black hover:text-[#EC2F43]" href="./index.html">Home</a></li>
+					<li><a class="v_navlink text-black hover:text-[#EC2F43]" href="./aboutus.html">About</a></li>
+					<li><a class="v_navlink text-black hover:text-[#EC2F43]" href="./services.html">Services</a></li>
+					<li><a class="v_navlink text-black hover:text-[#EC2F43]" href="./contact.html .html">Contact</a></li>
+				</ul>
 			</nav>
 		</div>
 
@@ -1035,6 +1063,14 @@
 
 			}
 		});
+
+		// Toggle Mobile Menu
+		const menuIcon = document.querySelector(".menu-icon");
+		const mobileMenu = document.querySelector(".mobile-menu");
+
+		menuIcon.addEventListener("click", () => {
+			mobileMenu.classList.toggle("active");
+		});
 	</script>
 	<main class="l-main">
 
@@ -1047,7 +1083,6 @@
 							<div class="wpb_column vc_column_container vc_col-sm-12" data-equalizer-watch>
 								<div class="wpb_wrapper">
 									<div class="wpb_revslider_element wpb_content_element">
-										<!-- START Home one Slider REVOLUTION SLIDER 6.4.8 -->
 										<p class="rs-p-wp-fix"></p>
 										<rs-module-wrap id="rev_slider_3_1_wrapper" data-source="gallery"
 											style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
@@ -1062,17 +1097,16 @@
 															title="Home" class="rev-slidebg tp-rs-img rs-lazyload"
 															data-lazyload="//themes.webdevia.com/petroleum-gas/wp-content/uploads/revslider/home-one-slider/oil.jpg"
 															data-parallax="10" data-no-retina>
-														<!--
-							--><rs-layer id="slider-3-slide-13-layer-3" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on"
-															data-xy="x:c;y:m;" data-text="w:normal;fw:700;"
-															data-dim="w:100%;h:100%;" data-basealign="slide"
-															data-frame_0="tp:600;"
+														<rs-layer id="slider-3-slide-13-layer-3"
+															class="tp-shape tp-shapewrapper" data-type="shape"
+															data-rsp_ch="on" data-xy="x:c;y:m;"
+															data-text="w:normal;fw:700;" data-dim="w:100%;h:100%;"
+															data-basealign="slide" data-frame_0="tp:600;"
 															data-frame_1="tp:600;st:1000;sp:1500;"
 															data-frame_999="o:0;tp:600;st:9000;sp:1000;"
 															style="z-index:5;background-color:rgba(0,0,0,0.35);">
-														</rs-layer><!--
-
-							--><rs-layer id="slider-3-slide-13-layer-1" class="Newspaper-Title" data-type="text"
+														</rs-layer><rs-layer id="slider-3-slide-13-layer-1"
+															class="Newspaper-Title" data-type="text"
 															data-color="rgba(255,255,255,1)" data-rsp_ch="on"
 															data-xy="xo:50px,50px,50px,30px;yo:239px,135px,105px,130px;"
 															data-text="w:normal;s:50,50,50,30;l:55,55,55,35;fw:700,400,400,400;"
@@ -1085,21 +1119,6 @@
 															style="z-index:6;font-family:Montserrat;text-align:left;">Making
 															Gas Supply Easy, Reliable, and Hassle-Free.
 														</rs-layer>
-
-														<!-- <rs-layer id="slider-3-slide-13-layer-2" class="Newspaper-Subtitle" data-type="text"
-															data-color="rgba(255,210,0,1)||rgba(168,216,238,1)||rgba(168,216,238,1)||rgba(168,216,238,1)"
-															data-rsp_ch="on"
-															data-xy="xo:50px,50px,50px,30px;yo:210px,110px,80px,100px;"
-															data-text="s:15;l:20;fw:400,900,900,900;"
-															data-frame_0="y:-100%;o:1;tp:600;" data-frame_0_mask="u:t;"
-															data-frame_1="tp:600;st:1000;sp:1500;"
-															data-frame_1_mask="u:t;"
-															data-frame_999="st:9000;sp:1000;auto:true;"
-															data-frame_999_mask="u:t;"
-															style="z-index:7;font-family:Montserrat;text-align:left;color:#EC2F43 ;">Real
-															Deal
-														</rs-layer> -->
-
 														<rs-layer id="slider-3-slide-13-layer-5"
 															class="Newspaper-Button rev-btn" data-type="button"
 															data-color="rgba(255,255,255,1)"
@@ -1113,29 +1132,20 @@
 															data-frame_999="st:9000;sp:1000;auto:true;"
 															data-frame_999_mask="u:t;"
 															data-frame_hover="c:#333;bgc:rgba(255,255,255,0.80);boc:rgba(255,255,255,0.25);bor:4px,4px,4px,4px;bos:solid;bow:1px,1px,1px,1px;oX:50;oY:50;e:power1.inOut;"
-															style="z-index:8;background-color:#EC2F43;font-family:Montserrat;cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:2px;text-align:left;type:text;">READ
-															MORE
+															style="z-index:8;background-color:#EC2F43;font-family:Montserrat;cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:2px;text-align:left;type:text;"><a href="aboutus.html">READ
+															MORE</a>
 														</rs-layer>
 													</rs-slide>
-													<!-- <rs-slide data-key="rs-14" data-title="THE REAL DEAL"
-														data-description="Your Trusted Partner for All Things LPG."
-														data-thumb="//themes.webdevia.com/petroleum-gas/wp-content/uploads/2016/05/glass-building-100x50.jpg"
-														data-in="y:(100%);" data-out="y:(-60%);">
-														<img decoding="async"
-															src="http://themes.webdevia.com/petroleum-gas/wp-content/plugins/revslider/public/assets/assets/dummy.png"
-															title="Home" class="rev-slidebg tp-rs-img rs-lazyload"
-															data-lazyload="//themes.webdevia.com/petroleum-gas/wp-content/uploads/2016/05/glass-building.jpg"
-															data-parallax="10" data-no-retina> -->
-													<!--
-							--><rs-layer id="slider-3-slide-14-layer-3" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on"
-														data-xy="x:c;y:m;" data-text="w:normal;fw:700;"
+
+													<rs-layer id="slider-3-slide-14-layer-3"
+														class="tp-shape tp-shapewrapper" data-type="shape"
+														data-rsp_ch="on" data-xy="x:c;y:m;" data-text="w:normal;fw:700;"
 														data-dim="w:100%;h:100%;" data-basealign="slide"
 														data-frame_0="tp:600;" data-frame_1="tp:600;st:1000;sp:1500;"
 														data-frame_999="o:0;tp:600;st:w;sp:1000;"
 														style="z-index:5;background-color:rgba(0,0,0,0.35);">
-													</rs-layer><!--
-
-							--><rs-layer id="slider-3-slide-14-layer-1" class="Newspaper-Title" data-type="text"
+													</rs-layer><rs-layer id="slider-3-slide-14-layer-1"
+														class="Newspaper-Title" data-type="text"
 														data-color="rgba(255,255,255,1)" data-rsp_ch="on"
 														data-xy="xo:50px,50px,50px,30px;yo:366px,135px,105px,130px;"
 														data-text="w:normal;s:50,50,50,30;l:55,55,55,35;fw:700,400,400,400;"
@@ -1146,9 +1156,8 @@
 														data-frame_999_mask="u:t;"
 														style="z-index:6;font-family:Montserrat;text-align:left;">Offering
 														high-quality LPG products tailored to your needs.
-													</rs-layer><!--
-
-							--><rs-layer id="slider-3-slide-14-layer-2" class="Newspaper-Subtitle" data-type="text"
+													</rs-layer><rs-layer id="slider-3-slide-14-layer-2"
+														class="Newspaper-Subtitle" data-type="text"
 														data-color="rgba(255,210,0,1)||rgba(168,216,238,1)||rgba(168,216,238,1)||rgba(168,216,238,1)"
 														data-rsp_ch="on"
 														data-xy="xo:50px,50px,50px,30px;yo:340px,110px,80px,100px;"
@@ -1159,9 +1168,8 @@
 														data-frame_999_mask="u:t;"
 														style="z-index:7;font-family:Roboto;text-align:left; color: #EC2F43;">THE
 														REAL DEAL
-													</rs-layer><!--
-
-							--><rs-layer id="slider-3-slide-14-layer-5" class="Newspaper-Button rev-btn" data-type="button"
+													</rs-layer><rs-layer id="slider-3-slide-14-layer-5"
+														class="Newspaper-Button rev-btn" data-type="button"
 														data-color="rgba(255,255,255,1)"
 														data-xy="xo:53px,53px,53px,30px;yo:561px,331px,301px,245px;"
 														data-text="s:13;l:17;fw:700;" data-rsp_bd="off"
@@ -1174,8 +1182,7 @@
 														data-frame_hover="c:#000;bgc:#fff;boc:#fff;bor:0px,0px,0px,0px;bos:solid;bow:1px,1px,1px,1px;oX:50;oY:50;e:power1.inOut;"
 														style="z-index:8;background-color:#EC2F43;font-family:Roboto;cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:2px;text-align:left;type:text;">READ
 														MORE
-													</rs-layer><!--
---> </rs-slide>
+													</rs-layer></rs-slide>
 												</rs-slides>
 											</rs-module>
 											<script type="text/javascript">
@@ -1693,7 +1700,9 @@
 													class="wpb_raw_code wpb_content_element wpb_raw_html content-highlited">
 													<div class="wpb_wrapper">
 														<h3><span class="quote">“</span>
-															We provide cutting-edge LPG solutions, ensuring safety, efficiency, and accessibility for homes and industries worldwide.
+															We provide cutting-edge LPG solutions, ensuring safety,
+															efficiency, and accessibility for homes and industries
+															worldwide.
 															<span class="quote">”</span>
 														</h3>
 													</div>
@@ -1860,20 +1869,6 @@
 								<input type="text" class="email-adress" placeholder="EMAIL ADRESS" size="20" value=""
 									name="email-adress">
 								<input type="submit" class="newslettersubmit" value="GO">
-								<!-- <ul class="inline-list">
-									<li class="flickr">
-										<a href="http://www.flickr.com/webdevia"><i class="fa fa-flickr"></i></a>
-									</li>
-									<li class="facebook">
-										<a href="https://www.facebook.com/webdevia"><i class="fa fa-facebook"></i></a>
-									</li>
-									<li class="twitter">
-										<a href="https://twitter.com/webdevia"><i class="fa fa-twitter"></i></a>
-									</li>
-									<li class="vimeo">
-										<a href="https://vimeo.com/webdevia"><i class="fa fa-vimeo-square"></i></a>
-									</li>
-								</ul> -->
 							</div>
 						</div>
 					</div>
@@ -1883,7 +1878,7 @@
 	</section>
 
 	<style>
-		.footer-bg{
+		.footer-bg {
 			background-image: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.658)), url(https://www.jianshen-tank.com/Content/uploads/2021733091/2021080510234603d199d5c4d4489dacbc37f7395644e8.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1901,16 +1896,17 @@
 					<ul id="menu-footer-menu" class="menu">
 						<li id="menu-item-966"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-883 current_page_item menu-item-966">
-							<a href="https://themes.webdevia.com/petroleum-gas/" aria-current="page">Home</a></li>
+							<a href="index.html" aria-current="page">Home</a>
+						</li>
 						<li id="menu-item-967"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-967"><a
-								href="https://themes.webdevia.com/petroleum-gas/?page_id=6">About Us</a></li>
+								href="aboutus.html">About Us</a></li>
 						<li id="menu-item-968"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-968"><a
-								href="https://themes.webdevia.com/petroleum-gas/?page_id=10">Blog</a></li>
+								href="services.html">Services</a></li>
 						<li id="menu-item-969"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-969"><a
-								href="https://themes.webdevia.com/petroleum-gas/?page_id=8">Contact</a></li>
+								href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 
@@ -1922,7 +1918,7 @@
 
 				<p>
 
-					© 2025 Petroleum All rights reserved.
+					© 2025 IPEOGAS All rights reserved.
 				</p>
 
 			</div>
