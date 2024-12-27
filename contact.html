@@ -1386,11 +1386,11 @@
         }
 
         .wd-footer {
-			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.jianshen-tank.com/Content/uploads/2021733091/2021080510234603d199d5c4d4489dacbc37f7395644e8.jpg);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.jianshen-tank.com/Content/uploads/2021733091/2021080510234603d199d5c4d4489dacbc37f7395644e8.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
         .wd-section-contact .wd-form .form-content,
         .wd-section-contact .wd-form {
@@ -1422,9 +1422,7 @@
             border: none;
         }
 
-        .wd-section-blog-services.style-3 .wd-blog-post 
-
-        div {
+        .wd-section-blog-services.style-3 .wd-blog-post div {
             width: 200px;
             height: 200px;
         }
@@ -1655,7 +1653,8 @@
         src="https://maps.googleapis.com/maps/vt?pb=!1m4!1m3!1i11!2i600!3i768!1m4!1m3!1i11!2i600!3i769!1m4!1m3!1i11!2i601!3i768!1m4!1m3!1i11!2i601!3i769!1m4!1m3!1i11!2i600!3i770!1m4!1m3!1i11!2i601!3i770!1m4!1m3!1i11!2i602!3i768!1m4!1m3!1i11!2i602!3i769!1m4!1m3!1i11!2i603!3i768!1m4!1m3!1i11!2i603!3i769!1m4!1m3!1i11!2i602!3i770!1m4!1m3!1i11!2i603!3i770!1m4!1m3!1i11!2i604!3i768!1m4!1m3!1i11!2i604!3i769!1m4!1m3!1i11!2i605!3i768!1m4!1m3!1i11!2i605!3i769!1m4!1m3!1i11!2i604!3i770!1m4!1m3!1i11!2i605!3i770!2m3!1e0!2sm!3i715469515!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjF8cy5lOmwudC5mfHAuYzojNDQ0NDQ0LHMudDo1fHAuYzojZjJmMmYyLHMudDoyfHAudjpvZmYscy50OjN8cC5zOi0xMDB8cC5sOjQ1LHMudDo0OXxwLnY6c2ltcGxpZmllZCxzLnQ6NTB8cy5lOmwuaXxwLnY6b2ZmLHMudDo0fHAudjpvZmYscy50OjZ8cC5jOiM0NmJjZWN8cC52Om9u!4e3!12m1!5b1&amp;callback=_xdc_._pgcy2g&amp;key=AIzaSyAK-lm5gdnsKARlSb10nkRfKoGCycwH49Y&amp;token=54165"></script>
     <script type="text/javascript" charset="UTF-8"
         src="https://maps.googleapis.com/maps-api-v3/api/js/59/3a/controls.js"></script>
-        <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body
@@ -1663,106 +1662,118 @@
     cz-shortcut-listen="true"><!--.l-header region -->
 
     <style>
-		/* Transition effect for header background */
-		.v_nav {
-			transition: background-color 0.3s ease, box-shadow 0.3s ease;
-		}
+        /* Transition effect for header background */
+        .v_nav {
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
 
-		/* Scrolled header styles */
-		.v_nav.scrolled {
-			background-color: rgba(241, 241, 241, 0.8);
-			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		}
+        /* Scrolled header styles */
+        .v_nav.scrolled {
+            background-color: rgba(241, 241, 241, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-		.scroll_link_color {
-			color: #710298;
-		}
+        .scroll_link_color {
+            color: #710298;
+        }
 
-		/* Mobile menu styles */
-		.mobile-menu {
-			display: none;
-			background-color: rgba(241, 241, 241, 0.9);
-			position: absolute;
-			top: 70px;
-			/* Adjust this based on your header height */
-			left: 0;
-			right: 0;
-			z-index: 50;
-			text-align: center;
-		}
+        /* Mobile menu styles */
+        .mobile-menu {
+            display: none;
+            background-color: rgba(241, 241, 241, 0.9);
+            position: absolute;
+            top: 70px;
+            /* Adjust this based on your header height */
+            left: 0;
+            right: 0;
+            z-index: 50;
+            text-align: center;
+        }
 
-		.mobile-menu.active {
-			display: block;
-		}
+        .mobile-menu.active {
+            display: block;
+        }
 
-		.mobile-menu li {
-			padding: 10px 0;
-			border-bottom: 1px solid #ccc;
-		}
-	</style>
-	<header class='l-header creative-layout  fixed '>
-		<div class="top-bar-container contain-to-grid  ">
+        .mobile-menu li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+    <header class='l-header creative-layout  fixed '>
+        <div class="top-bar-container contain-to-grid  ">
 
-			<nav class="v_nav flex justify-around items-center  py-5  w-screen">
-				<img class="h-14 w-14" src="./images/gas_logo.png" alt="">
-				<div class=""></div>
-				<div class=""></div>
-				<ul class="md:flex hidden">
-					<li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
-							href="./index.html">Home</a></li>
-					<li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
-							href="./aboutus.html">About</a></li>
-					<li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
-							href="./services.html">Services</a></li>
-					<li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
-							href="./contact.html">Contact</a></li>
-				</ul>
-				<div class="md:hidden">
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"
-						stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
-						<line x1="3" y1="12" x2="21" y2="12"></line>
-						<line x1="3" y1="6" x2="21" y2="6"></line>
-						<line x1="3" y1="18" x2="21" y2="18"></line>
-					</svg>
+            <nav class="v_nav flex justify-around items-center  py-5  w-screen">
+                <img class="h-14 w-14" src="./images/gas_logo.png" alt="">
+                <div class=""></div>
+                <div class=""></div>
+                <ul class="md:flex hidden">
+                    <li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
+                            href="./index.html">Home</a></li>
+                    <li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
+                            href="./aboutus.html">About</a></li>
+                    <li class="ml-8 text-white font-medium text-xl"><a class="v_navlink hover:text-[#EC2F43]"
+                            href="./services.html">Services</a></li>
+                    <li class="ml-8 text-[#EC2F43] font-medium text-xl"><a class="v_navlink text-[#EC2F43]"
+                            href="./contact.html">Contact</a></li>
+                    <li class="ml-8 text-white">
+                        <a href="https://www.facebook.com/share/1YDLhAY3xe/?mibextid=LQQJ4d"><i
+                                class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="ml-6 text-white">
+                        <a href="https://www.instagram.com/ipeo.gas/profilecard/?igsh=MWRibnVxam55dzFwag=="><i
+                                class="fa fa-instagram"></i></a>
+                    </li>
+                    <li class="ml-6 text-white">
+                        <a href="https://api.whatsapp.com/send?phone=2348055539763 "><i class="fa fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+                <div class="md:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
 
-				</div>
-				<!-- Mobile Nav Links -->
-				<ul class="mobile-menu">
-					<li><a class="v_navlink text-black hover:text-[#EC2F43]" href="./index.html">Home</a></li>
-					<li><a class="v_navlink text-black hover:text-[#EC2F43]" href="./aboutus.html">About</a></li>
-					<li><a class="v_navlink text-black hover:text-[#EC2F43]" href="./services.html">Services</a></li>
-					<li><a class="v_navlink text-black hover:text-[#EC2F43]" href="./contact.html .html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
+                </div>
+                <!-- Mobile Nav Links -->
+                <ul class="mobile-menu">
+                    <li><a class="v_navlink text-black hover:text-[#EC2F43]" href="./index.html">Home</a></li>
+                    <li><a class="v_navlink text-black hover:text-[#EC2F43]" href="./aboutus.html">About</a></li>
+                    <li><a class="v_navlink text-black hover:text-[#EC2F43]" href="./services.html">Services</a></li>
+                    <li><a class="v_navlink text-black hover:text-[#EC2F43]" href="./contact.html .html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-	</header> <!-- content  -->
-	<script>
-		// Add background to header on scroll
-		window.addEventListener('scroll', () => {
-			const nav = document.querySelector('.v_nav');
-			const navlink = document.querySelectorAll('.v_navlink');
-			const menu_icon = document.querySelector('.menu-icon');
-			if (window.scrollY > 20) {
-				nav.classList.add('scrolled');
-				navlink.forEach(link => link.classList.add('scroll_link_color'));
-				menu_icon.setAttribute('stroke', '#710298');
-			} else {
-				nav.classList.remove('scrolled');
-				navlink.forEach(link => link.classList.remove('scroll_link_color'));
-				menu_icon.setAttribute('stroke', 'white');
+    </header> <!-- content  -->
+    <script>
+        // Add background to header on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.v_nav');
+            const navlink = document.querySelectorAll('.v_navlink');
+            const menu_icon = document.querySelector('.menu-icon');
+            if (window.scrollY > 20) {
+                nav.classList.add('scrolled');
+                navlink.forEach(link => link.classList.add('scroll_link_color'));
+                menu_icon.setAttribute('stroke', '#710298');
+            } else {
+                nav.classList.remove('scrolled');
+                navlink.forEach(link => link.classList.remove('scroll_link_color'));
+                menu_icon.setAttribute('stroke', 'white');
 
-			}
-		});
+            }
+        });
 
-		// Toggle Mobile Menu
-		const menuIcon = document.querySelector(".menu-icon");
-		const mobileMenu = document.querySelector(".mobile-menu");
+        // Toggle Mobile Menu
+        const menuIcon = document.querySelector(".menu-icon");
+        const mobileMenu = document.querySelector(".mobile-menu");
 
-		menuIcon.addEventListener("click", () => {
-			mobileMenu.classList.toggle("active");
-		});
-	</script>
+        menuIcon.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+        });
+    </script>
 
     <section class="wd-title-bar">
 
@@ -1788,7 +1799,7 @@
             <article class="large-12 columns">
                 <div class="body field clearfix">
                     <section class="wpb-content-wrapper">
-                        <div class="vc_row wpb_row vc_row-fluid vc_custom_1448990409591" >
+                        <div class="vc_row wpb_row vc_row-fluid vc_custom_1448990409591">
                             <div class="wpb_column vc_column_container vc_col-sm-12" data-equalizer-watch="">
                                 <div class="wpb_wrapper">
 
@@ -2423,7 +2434,8 @@
                                                                                 role="menuitemradio" aria-checked="true"
                                                                                 aria-haspopup="true"
                                                                                 style="background: none padding-box rgb(255, 255, 255); display: table-cell; border: 0px; margin: 0px; padding: 0px 23px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; text-align: center; height: 40px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; font-size: 18px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 90px; font-weight: 500;">Styled
-                                                                                Map</button></div>
+                                                                                Map</button>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div></div>
@@ -2592,7 +2604,8 @@
                                                                                     draggable="false"
                                                                                     style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
                                                                             </div>
-                                                                        </a></div>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
                                                                 <div></div>
                                                                 <div>
@@ -2616,7 +2629,8 @@
                                                                                         title="Keyboard shortcuts"
                                                                                         type="button"
                                                                                         style="background: none; display: inline-block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: inherit;">Keyboard
-                                                                                        shortcuts</button></div>
+                                                                                        shortcuts</button>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="gmnoprint"
@@ -2637,7 +2651,8 @@
                                                                                         title="Map Data" type="button"
                                                                                         style="background: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: inherit; display: none;">Map
                                                                                         Data</button><span style="">Map
-                                                                                        data ©2024 Google</span></div>
+                                                                                        data ©2024 Google</span>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="gmnoscreen">
@@ -2720,7 +2735,8 @@
                                                                                     dir="ltr"
                                                                                     href="https://www.google.com/maps/@40.719789,-74.000335,11z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
                                                                                     style="font-family: Roboto, Arial, sans-serif; font-size: 10px; text-decoration: none; position: relative; color: rgb(0, 0, 0);">Report
-                                                                                    a map error</a></div>
+                                                                                    a map error</a>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2745,117 +2761,117 @@
 
     <!--.footer-columns -->
     <section class="wd-footer">
-		<div class="row animation-parent" data-animation-delay="180">
-			<ul class="block large-4 medium-4 columns animated fadeInRight">
+        <div class="row animation-parent" data-animation-delay="180">
+            <ul class="block large-4 medium-4 columns animated fadeInRight">
 
-				<li>
-					<div class="textwidget">
-						<div class="widget-logo">
-							<img decoding="async" class="h-16 w-16" alt="logo" src="./images/gas_logo.png">
-							</p>
-							<p>Petroleum is the leader in the country sed diam nonumy eirmod tempor invidunt ut labore
-								and efficient strategy.</p>
-							<p>We provide the energy to medium and big company, sadipscing elitr, sed diam nonumy.</p>
-							</p>
-						</div>
-					</div>
-				</li>
-			</ul>
-			<ul class="block large-4 medium-4 columns animated fadeInRight">
-				<li>
-					<h2 class="block-title">Get in Touch</h2>
-					<div class="textwidget">
-						<section class="widget-info">
+                <li>
+                    <div class="textwidget">
+                        <div class="widget-logo">
+                            <img decoding="async" class="h-16 w-16" alt="logo" src="./images/gas_logo.png">
+                            </p>
+                            <p>Petroleum is the leader in the country sed diam nonumy eirmod tempor invidunt ut labore
+                                and efficient strategy.</p>
+                            <p>We provide the energy to medium and big company, sadipscing elitr, sed diam nonumy.</p>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="block large-4 medium-4 columns animated fadeInRight">
+                <li>
+                    <h2 class="block-title">Get in Touch</h2>
+                    <div class="textwidget">
+                        <section class="widget-info">
 
-							<ul>
-								<li>
-									<span><span>Phone:</span> +1 123 457 653</span>
-								</li>
-								<li>
-									<span><span>Fax:</span> +1 496 457 654</span>
-								</li>
-								<li>
-									<span><span>Email:</span> <a
-											href="mailto:email@website.com">our-mail@example.com</a></span>
-								</li>
-								<li>
-									<span><span>Adress:</span> 121 King Street, Melbourne 3000 Australia</span>
-								</li>
-							</ul>
-						</section>
-					</div>
-				</li>
-			</ul>
-			<ul class="block large-4 medium-4 columns animated fadeInRight">
+                            <ul>
+                                <li>
+                                    <span><span>Phone:</span> +1 123 457 653</span>
+                                </li>
+                                <li>
+                                    <span><span>Fax:</span> +1 496 457 654</span>
+                                </li>
+                                <li>
+                                    <span><span>Email:</span> <a
+                                            href="mailto:email@website.com">our-mail@example.com</a></span>
+                                </li>
+                                <li>
+                                    <span><span>Adress:</span> 121 King Street, Melbourne 3000 Australia</span>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </li>
+            </ul>
+            <ul class="block large-4 medium-4 columns animated fadeInRight">
 
-				<li>
-					<h2 class="block-title">Newsletter</h2>
-					<div class="textwidget">
-						<div class="wd-newsletter">
-							Sign up your newsletter
+                <li>
+                    <h2 class="block-title">Newsletter</h2>
+                    <div class="textwidget">
+                        <div class="wd-newsletter">
+                            Sign up your newsletter
 
-							<div>
-								<input type="text" class="email-adress" placeholder="EMAIL ADRESS" size="20" value=""
-									name="email-adress">
-								<input type="submit" class="newslettersubmit" value="GO">
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</section>
+                            <div>
+                                <input type="text" class="email-adress" placeholder="EMAIL ADRESS" size="20" value=""
+                                    name="email-adress">
+                                <input type="submit" class="newslettersubmit" value="GO">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-	<style>
-		.footer-bg {
-			background-image: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.658)), url(https://www.jianshen-tank.com/Content/uploads/2021733091/2021080510234603d199d5c4d4489dacbc37f7395644e8.jpg);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-	</style>
+    <style>
+        .footer-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.658)), url(https://www.jianshen-tank.com/Content/uploads/2021733091/2021080510234603d199d5c4d4489dacbc37f7395644e8.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
 
-	<footer class="wd-copyright footer-bg">
+    <footer class="wd-copyright footer-bg">
 
-		<div class="row">
+        <div class="row">
 
-			<div class="large-12 columns">
+            <div class="large-12 columns">
 
-				<div class="copyright-menu">
-					<ul id="menu-footer-menu" class="menu">
-						<li id="menu-item-966"
-							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-883 current_page_item menu-item-966">
-							<a href="index.html" aria-current="page">Home</a>
-						</li>
-						<li id="menu-item-967"
-							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-967"><a
-								href="aboutus.html">About Us</a></li>
-						<li id="menu-item-968"
-							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-968"><a
-								href="services.html">Services</a></li>
-						<li id="menu-item-969"
-							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-969"><a
-								href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-
-
-			</div>
-
-			<div class="copyright large-12 columns">
+                <div class="copyright-menu">
+                    <ul id="menu-footer-menu" class="menu">
+                        <li id="menu-item-966"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-883 current_page_item menu-item-966">
+                            <a href="index.html" aria-current="page">Home</a>
+                        </li>
+                        <li id="menu-item-967"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-967"><a
+                                href="aboutus.html">About Us</a></li>
+                        <li id="menu-item-968"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-968"><a
+                                href="services.html">Services</a></li>
+                        <li id="menu-item-969"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-969"><a
+                                href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
 
 
-				<p>
+            </div>
 
-					© 2025 IPEOGAS All rights reserved.
-				</p>
+            <div class="copyright large-12 columns">
 
-			</div>
 
-		</div>
+                <p>
 
-	</footer>
-  
+                    © 2025 IPEOGAS All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
     <!--/.page -->
 
 
@@ -2881,7 +2897,7 @@
         id="contact-form-7-js"></script>
     <script type="text/javascript" id="wd_demo_panel_script-js-extra">
         /* <![CDATA[ */
-        var demo_panel_vars = { "demo_panel_theme_list": "<div class=\"demos-panel\"> \n\n\t\t<div class=\"demos-panel_overlay\"><\/div>\n\t\t\n\t\t<div class=\"demos-panel_panel\"> \n\t\t\t<div class=\"demos-panel_buttons\"> \n\t\t\t\t<a class=\"demos-panel_button view-themes\" aria-label=\"View Themes\">\n\t\t\t\t\t<span class=\"demos-panel_button-icon\">\n\t\t\t\t\t\t<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" \n\t\t\t\t\t\t\tstroke-linejoin=\"round\" class=\"lucide lucide-book-image\"><path d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20\"\/><circle cx=\"10\" cy=\"8\" r=\"2\"\/><path d=\"m20 13.7-2.1-2.1c-.8-.8-2-.8-2.8 0L9.7 17\"\/><\/svg>\n\t\t\t\t\t<\/span>\n\t\t\t\t\t<span class=\"demos-panel_button-desc\">View Themes<\/span>\n\t\t\t\t<\/a>\n\t\t\t\t<a href=\"https:\/\/themes.webdevia.com\/petroleum-gas\/landing\/\" target=\"_blank\" class=\"demos-panel_button\" aria-label=\"Features\">\n\t\t\t\t\t<span class=\"demos-panel_button-icon\">\n\t\t\t\t\t\t<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" \n\t\t\t\t\t\tstroke-linejoin=\"round\" class=\"lucide lucide-presentation\"><path d=\"M2 3h20\"\/><path d=\"M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3\"\/><path d=\"m7 21 5-5 5 5\"\/><\/svg>\n\t\t\t\t\t<\/span>\n\t\t\t\t\t<span class=\"demos-panel_button-desc\">Features<\/span>\n\t\t\t\t<\/a>\n\t\t\t\t<a href=\"https:\/\/1.envato.market\/R777N\" class=\"demos-panel_button\" aria-label=\"Get this Theme\">\n\t\t\t\t\t<span class=\"demos-panel_button-icon\">\n\t\t\t\t\t\t<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" \n\t\t\t\t\t\t\tstroke-linejoin=\"round\" class=\"lucide lucide-shopping-bag\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"\/><path d=\"M3 6h18\"\/><path d=\"M16 10a4 4 0 0 1-8 0\"\/><\/svg>\n\t\t\t\t\t<\/span>\n\t\t\t\t\t<span class=\"demos-panel_button-desc\">Get this Theme<\/span>\n\t\t\t\t<\/a>\n\t\t\t<\/div>\n\t\t\t<div class=\"demos-panel_list-wrapper\">\n\t\t\t\t<ul class=\"demos-panel_list\">\n\t\t\t\t\t\t        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/backhoe-heavy-construction-equipment-rentals-machinery-wordpress-theme\/landing\">\r\n            <img data-src=\"https:\/\/previews.customer.envatousercontent.com\/files\/342824005\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Backhoe\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h5 class=\"demos-panel-theme-title\">Backhoe<\/h5>\r\n              <h6 class=\"demos-panel-theme-price\">$89<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/flooring\/landing\">\r\n            <img data-src=\"https:\/\/previews.customer.envatousercontent.com\/files\/219969421\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Flooring\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Flooring<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/demo.webdevia.com\/partytent-event-eental-wordPress-theme\/landing\">\r\n            <img data-src=\"https:\/\/previews.customer.envatousercontent.com\/files\/402640017\/preview.__large_preview.png\" width=\"285\" height=\"145\" alt=\"Partytent\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Partytent<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$89<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/windows-doors\/landing\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/338400814\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Windows & Doors\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Windows & Doors<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/demo.webdevia.com\/cocina-kitchen-wordpress-theme\/landing\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/462905736\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Cocina\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Cocina<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"http:\/\/themes.webdevia.com\/voip-wordpress-theme\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/218971784\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"VOIP\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">VOIP<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/factory\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/371888003\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Manufacturing\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Manufacturing<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$59<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"http:\/\/themes.webdevia.com\/solar-wp\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/222426141\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Green Energy\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Green Energy<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/petroleum-gas\/landing\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/267792954\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Petroleum\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Petroleum<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/tires-wheels\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/234290159\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Wheels & Tires\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Wheels & Tires<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/bodyguard\/landing\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/472062715\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Bodyguard\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Bodyguard<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$59<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/bidpro.webdevia.com\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/383205067\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"GRBid\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">GRBid<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$49<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/bathrooms.webdevia.com\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/246953847\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Bathrooms\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Bathrooms<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$59<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/marbleo.webdevia.com\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/481715641\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Marbl\u00e9o\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Marbl\u00e9o<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$59<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/compactor-asphal-paving-road-construction-wordpress-theme\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/291077348\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Compactor\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Compactor<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\n\t\t\t\t<\/ul> \n\t\t\t\t<a href=\"#\" class=\"view-all-themes\">View More Themes<\/a>     \n\t\t\t<\/div>\n\t\t<\/div>  \n  <\/div>", "show_panel": "yes" };
+        // var demo_panel_vars = { "demo_panel_theme_list": "<div class=\"demos-panel\"> \n\n\t\t<div class=\"demos-panel_overlay\"><\/div>\n\t\t\n\t\t<div class=\"demos-panel_panel\"> \n\t\t\t<div class=\"demos-panel_buttons\"> \n\t\t\t\t<a class=\"demos-panel_button view-themes\" aria-label=\"View Themes\">\n\t\t\t\t\t<span class=\"demos-panel_button-icon\">\n\t\t\t\t\t\t<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" \n\t\t\t\t\t\t\tstroke-linejoin=\"round\" class=\"lucide lucide-book-image\"><path d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20\"\/><circle cx=\"10\" cy=\"8\" r=\"2\"\/><path d=\"m20 13.7-2.1-2.1c-.8-.8-2-.8-2.8 0L9.7 17\"\/><\/svg>\n\t\t\t\t\t<\/span>\n\t\t\t\t\t<span class=\"demos-panel_button-desc\">View Themes<\/span>\n\t\t\t\t<\/a>\n\t\t\t\t<a href=\"https:\/\/themes.webdevia.com\/petroleum-gas\/landing\/\" target=\"_blank\" class=\"demos-panel_button\" aria-label=\"Features\">\n\t\t\t\t\t<span class=\"demos-panel_button-icon\">\n\t\t\t\t\t\t<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" \n\t\t\t\t\t\tstroke-linejoin=\"round\" class=\"lucide lucide-presentation\"><path d=\"M2 3h20\"\/><path d=\"M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3\"\/><path d=\"m7 21 5-5 5 5\"\/><\/svg>\n\t\t\t\t\t<\/span>\n\t\t\t\t\t<span class=\"demos-panel_button-desc\">Features<\/span>\n\t\t\t\t<\/a>\n\t\t\t\t<a href=\"https:\/\/1.envato.market\/R777N\" class=\"demos-panel_button\" aria-label=\"Get this Theme\">\n\t\t\t\t\t<span class=\"demos-panel_button-icon\">\n\t\t\t\t\t\t<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" \n\t\t\t\t\t\t\tstroke-linejoin=\"round\" class=\"lucide lucide-shopping-bag\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"\/><path d=\"M3 6h18\"\/><path d=\"M16 10a4 4 0 0 1-8 0\"\/><\/svg>\n\t\t\t\t\t<\/span>\n\t\t\t\t\t<span class=\"demos-panel_button-desc\">Get this Theme<\/span>\n\t\t\t\t<\/a>\n\t\t\t<\/div>\n\t\t\t<div class=\"demos-panel_list-wrapper\">\n\t\t\t\t<ul class=\"demos-panel_list\">\n\t\t\t\t\t\t        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/backhoe-heavy-construction-equipment-rentals-machinery-wordpress-theme\/landing\">\r\n            <img data-src=\"https:\/\/previews.customer.envatousercontent.com\/files\/342824005\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Backhoe\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h5 class=\"demos-panel-theme-title\">Backhoe<\/h5>\r\n              <h6 class=\"demos-panel-theme-price\">$89<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/flooring\/landing\">\r\n            <img data-src=\"https:\/\/previews.customer.envatousercontent.com\/files\/219969421\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Flooring\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Flooring<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/demo.webdevia.com\/partytent-event-eental-wordPress-theme\/landing\">\r\n            <img data-src=\"https:\/\/previews.customer.envatousercontent.com\/files\/402640017\/preview.__large_preview.png\" width=\"285\" height=\"145\" alt=\"Partytent\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Partytent<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$89<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/windows-doors\/landing\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/338400814\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Windows & Doors\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Windows & Doors<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/demo.webdevia.com\/cocina-kitchen-wordpress-theme\/landing\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/462905736\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Cocina\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Cocina<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"http:\/\/themes.webdevia.com\/voip-wordpress-theme\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/218971784\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"VOIP\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">VOIP<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/factory\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/371888003\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Manufacturing\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Manufacturing<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$59<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"http:\/\/themes.webdevia.com\/solar-wp\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/222426141\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Green Energy\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Green Energy<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/petroleum-gas\/landing\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/267792954\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Petroleum\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Petroleum<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/tires-wheels\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/234290159\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Wheels & Tires\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Wheels & Tires<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/bodyguard\/landing\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/472062715\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Bodyguard\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Bodyguard<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$59<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/bidpro.webdevia.com\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/383205067\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"GRBid\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">GRBid<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$49<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/bathrooms.webdevia.com\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/246953847\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Bathrooms\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Bathrooms<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$59<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/marbleo.webdevia.com\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/481715641\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Marbl\u00e9o\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Marbl\u00e9o<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$59<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\r\n        <li>\r\n          <a target=\"_blank\" href=\"https:\/\/themes.webdevia.com\/compactor-asphal-paving-road-construction-wordpress-theme\/landing\/\">\r\n            <img data-src=\"https:\/\/s3.envato.com\/files\/291077348\/preview.__large_preview.jpg\" width=\"285\" height=\"145\" alt=\"Compactor\">\r\n            <div class=\"demos-panel-theme-meta\">\r\n              <h6 class=\"demos-panel-theme-title\">Compactor<\/h6>\r\n              <h6 class=\"demos-panel-theme-price\">$69<\/h6>\r\n            <\/div>\r\n          <\/a>\r\n        <\/li>\n\t\t\t\t<\/ul> \n\t\t\t\t<a href=\"#\" class=\"view-all-themes\">View More Themes<\/a>     \n\t\t\t<\/div>\n\t\t<\/div>  \n  <\/div>", "show_panel": "yes" };
         /* ]]> */
     </script>
     <script type="text/javascript"
@@ -2921,7 +2937,7 @@
             font-display: swap
         }
     </style>
-    <div class="demos-panel">
+    <!-- <div class="demos-panel">
 
         <div class="demos-panel_overlay"></div>
 
@@ -3124,7 +3140,7 @@
                 <a href="#" class="view-all-themes">View More Themes</a>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 
 </html>
